@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data=[{name:"ABC", age:30,gender:"male",mail:"abc@gmail.com",skills:["html","css","javascript"]},
+                  {name:"XYZ",age:24,gender:"female",mail:"xyz@gmail.com",skills:["html","css","python"]},
+                  {name:"QRS",age:29,gender:"female",mail:"qrs@gmail.com",skills:["html","css","react"]},
+                  {name:"IJK",age:29,gender:"male",mail:"ijk@gmail.com",skills:["html","css","angular"]}, ]
+        //for loop to get name,mail and skills
+        for(i=0;i<data.length;i++){
+            console.log(data[i].name,data[i].mail,data[i].skills)     
+        }
+
+        //for in loop to get name,mail and skills
+        for(i in data){
+            console.log(data[i].name,data[i].mail,data[i].skills)
+        }
+
+        //for of loop to get name
+        for(i=0;i<data.length;i++){
+        let text = "";
+        for (let x of data[i].name) {
+        text += x; 
+        }console.log(text);
+        }
+        
+       
+    </script>
+</body>
+</html>
